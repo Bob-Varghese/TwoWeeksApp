@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TwoWeeksApp.UserGoal"
+             Title="UserGoal">
+    <VerticalStackLayout Spacing="50" 
+                         Margin="10"
+                         VerticalOptions="Center">
+        <Label 
+            Text="What is your goal for the next two weeks?"
+            FontSize="Large"
+            FontAttributes="Bold"
+            HorizontalTextAlignment="Center"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <ListView x:Name="goalListView"
+                      ItemSelected="Item_Clicked">
+           
+        </ListView>
+
+
+    </VerticalStackLayout>
+</ContentPage>

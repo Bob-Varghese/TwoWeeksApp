@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TwoWeeksApp.UserQuestionaire"
+             Title="Registration">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Save"
+                     Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+
+
+    <VerticalStackLayout
+        VerticalOptions="Start"
+        Margin="20"
+        Spacing="20">
+        <Label 
+            x:Name="goalLabel"
+            FontSize="Large"
+            FontAttributes="Bold"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+
+        <Grid x:Name="MainGrid" Padding="0" Margin="10,0,10,0" RowSpacing="1" ColumnSpacing="1" BackgroundColor="White">
+            <!--      <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>-->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />                
+            </Grid.RowDefinitions>
+
+            <!--   These below button should be from code behind dynamically 
+
+            <Button  Grid.Row="0" Grid.Column="0" Text="Device A" WidthRequest="150" HeightRequest="50" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="White" Clicked="Button_1_Clicked"></Button>
+            <Button  Grid.Row="0" Grid.Column="1" Text="Device B" WidthRequest="150" HeightRequest="50" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="White" Clicked="Button_2_Clicked"></Button>
+            <Button  Grid.Row="0" Grid.Column="2" Text="Device C" WidthRequest="150" HeightRequest="50" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="White" Clicked="Button_3_Clicked"></Button>
+-->
+        </Grid>
+
+
+    </VerticalStackLayout>
+</ContentPage>
